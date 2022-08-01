@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+
+
+</head>
+
+<body>
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo3.png" alt="Logo alt">
+          </a>
+        </h1>
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+        </div>
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li class="current"><a href="index.html">Главная</a></li>
+             <li><a href="about.html">О нас</a></li>
+             <li><a href="services.html">Услуги</a></li>
+             <li><a href="gallery.html">Галерея</a></li>
+             <li><a href="contacts.html">Контакты</a></li>
+           </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>       
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h4>Мы на карте</h4>
+        <div class="map">
+          <figure class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15107.581138168878!2d37.83326181811734!3d55.745379279409754!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1646058032160!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+          </figure>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="grid_5">
+        <h4>Контактная информация</h4>
+        <p class="text1 offset__1">Мы расположены недалеко от м. Новогиреево, авт №17 36, остановка *Хлебзавод*</p>
+        
+        <p>Мы работаем каждый день без выходных с 9-00 до 21-00 </p>
+        Event-агенство * Праздник *<br>
+        ул. Сталеваров, д 15, оф.15,<br>
+         427680 г.Москва, ВАО.<br>
+        Телефон: +7 495 ххх хххх<br>
+        FAX:+7 495 ххх хххх <br>
+        E-mail: mail@mail.ru
+      </div>
+      <div class="grid_6 preffix_1">
+        <h4>Связаться с нами</h4>
+        <form id="contact-form">
+          <div class="contact-form-loader"></div>
+          <fieldset>
+            <label class="name">
+              <input type="text" name="name" placeholder="Ваше имя:" value="" data-constraints="@Required @JustLetters"  />
+              <span class="empty-message">*Заполните поле.</span>
+              <span class="error-message">*Неправильно набранное имя.</span>
+            </label>
+           
+            <label class="email">
+              <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+              <span class="empty-message">*Заполните поле.</span>
+              <span class="error-message">*Неправильно указанный email.</span>
+            </label>
+            <label class="phone">
+              <input type="text" name="phone" placeholder="Телефон:" value="" data-constraints="@Required @JustNumbers" />
+              <span class="empty-message">*Заполните поле.</span>
+              <span class="error-message">*Неправильно указанный номер телефона.</span>
+            </label>
+           
+            <label class="message">
+              <textarea name="message" placeholder="Сообщение:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+              <span class="empty-message">*Заполните поле.</span>
+              <span class="error-message">*Сообщение слишком короткое.</span>
+            </label>
+            <div>
+              <a href="#" class="btn" data-type="reset">Очистить</a>
+              <a href="#" class="btn" data-type="submit">Послать</a>
+            </div>
+          </fieldset> 
+          <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Обратная связь</h4>
+                </div>
+                <div class="modal-body">
+                  Ваше сообщение было отпавлено.Мы свяжемся с вами вскоре.
+                </div>      
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <div class="copyright"><img src="images/logo3.png" alt=""><span> &copy; | Данный сайт создан в качестве моего проекта  </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+</footer>
+
+</div>
+</body>
+
+</html>
+
